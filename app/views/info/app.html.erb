@@ -1,3 +1,12 @@
+
+
+<div class="demo-headline">
+        <h2 class="demo-logo">
+          <div class="logo"></div>
+          IoTaaS  设备列表
+        </h2>
+      </div>
+
 <div class="container">
 <div id="perceive" >
 <div id="header-wrapper">
@@ -11,7 +20,7 @@
             <img class="tile-image big-illustration" alt="" src="css/images/temperature.png">
             <h3 class="tile-title">温湿度感知</h3>
             <p>实时展现当前环境下的温度与湿度</p>
-            <a class="btn btn-primary btn-large btn-block " href="#" >预览</a>
+            <a class="btn btn-primary btn-large btn-block tempSensor_popup" href="http://110.76.185.87:8080/gateway/tempSensor.jsp?pw=800&amp;ph=600" >预览</a>
           </div>
         </div>
 
@@ -29,7 +38,7 @@
             <img class="tile-image" alt="" src="css/images/water.png">
             <h3 class="tile-title">水位感知</h3>
             <p>实时检测当前环境下水位传感器状态</p>
-            <a class="btn btn-primary btn-large btn-block" href="#">预览</a>
+            <a class="btn btn-primary btn-large btn-block water_popup" href="http://110.76.185.87:8080/gateway/waterSensor.jsp?pw=600&amp;ph=400">预览</a>
           </div>
         </div>
 
@@ -65,7 +74,7 @@
             <img class="tile-image big-illustration" alt="" src="css/images/motion.png">
             <h3 class="tile-title">运动感知</h3>
             <p>对当前环境下的运动物进行感知与监测</p>
-            <a class="btn btn-primary btn-large btn-block" href="#">预览</a>
+            <a class="btn btn-primary btn-large btn-block motion_popup " href="http://110.76.185.87:8080/gateway/moveSensor.jsp?pw=600&amp;ph=400">预览</a>
           </div>
         </div>
         <div class="span3">
@@ -73,7 +82,7 @@
             <img class="tile-image big-illustration" alt="" src="css/images/air.png">
             <h3 class="tile-title">空气感知</h3>
             <p>实时展现当前环境下空气质量，包括PM2.5等指标</p>
-            <a class="btn btn-primary btn-large btn-block" href="#">预览</a>
+            <a class="btn btn-primary btn-large btn-block pm_popup" href="http://42.123.86.187/airpm/index.html?pw=800&amp;ph=400">预览</a>
           </div>
         </div>
  </div>
@@ -178,6 +187,7 @@
 <script>
 
 $('.gesture_popup').popup();
+$('.pm_popup').popup();
 $('.energy_popup').popup({
 				types		: {
 					energy			: function(content, callback){
@@ -192,6 +202,9 @@ $('.energy_popup').popup({
 
 
 $('.brain_popup').popup();
+$('.tempSensor_popup').popup();
+$('.water_popup').popup();
+$('.motion_popup').popup();
 
 
 </script>
