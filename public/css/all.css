@@ -51,7 +51,7 @@ h3 {
 article {
     min-width:320px;
     color:#5a6673;
-    font:19px/31px 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font:19px/31px 'Helvetica Neue', 'Helvetica', Arial, sans-serif,"Microsoft YaHei" !important;
     background:#fff;
     -webkit-text-size-adjust:100%;
     -ms-text-size-adjust:none;
