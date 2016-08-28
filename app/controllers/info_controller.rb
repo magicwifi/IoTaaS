@@ -5,5 +5,8 @@ class InfoController < ApplicationController
 
   def app
   end
+
+  def scenes
+  end
 end
 

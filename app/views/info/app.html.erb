@@ -29,7 +29,7 @@
             <img class="tile-image" alt="" src="css/images/door.png">
             <h3 class="tile-title">门磁状态感知</h3>
             <p>查看当前门磁的开启or闭合状态</p>
-            <a class="btn btn-primary btn-large btn-block" href="#">预览</a>
+            <a class="btn btn-primary btn-large btn-block door_popup" href="http://110.76.185.87:8080/gateway/doorSensor.jsp?pw=600&amp;ph=400">预览</a>
           </div>
         </div>
 
@@ -101,8 +101,8 @@
         <div class="span3">
           <div class="tile tile-hot">
             <img class="tile-image big-illustration" alt="" src="css/images/energy.png">
-            <h3 class="tile-title">智慧节能</h3>
-            <p>实现温度控制，电源控制等全智能化调度</p>
+            <h3 class="tile-title">电器控制</h3>
+            <p>实现家电开关控制，空调温度风力的远程调节等</p>
             <a class="btn btn-primary btn-large btn-block energy_popup" href="http://42.123.86.187:3030/sampletv">预览</a>
           </div>
         </div>
@@ -110,7 +110,7 @@
         <div class="span3">
           <div class="tile tile-hot">
             <img class="tile-image big-illustration" alt="" src="css/images/sprinklerI.png">
-            <h3 class="tile-title">智慧灌溉</h3>
+            <h3 class="tile-title">灌溉系统</h3>
             <p>根据时间计划，当前环境智能调度灌溉系统</p>
             <a class="btn btn-primary btn-large btn-block plant_popup" href="http://42.123.86.187/plant/index.html?pw=800&amp;ph=600">预览</a>
           </div>
@@ -206,6 +206,7 @@ $('.tempSensor_popup').popup();
 $('.water_popup').popup();
 $('.motion_popup').popup();
 $('.plant_popup').popup();
+$('.door_popup').popup();
 
 
 </script>
