@@ -45,9 +45,9 @@
         <div class="span3">
           <div class="tile tile-hot">
             <img class="tile-image big-illustration" alt="" src="css/images/ar.png">
-            <h3 class="tile-title">AR 人机交互</h3>
-            <p>提供所见即所控，直观统一的AR使用界面</p>
-            <a class="btn btn-primary btn-large btn-block" href="#">预览</a>
+            <h3 class="tile-title">触发感知</h3>
+            <p>对按键的触发感知，类似亚马逊Dash服务</p>
+            <a class="btn btn-primary btn-large btn-block dash_popup" href="http://110.76.185.87:8080/gateway/touchSensor.jsp?pw=600&amp;ph=400">预览</a>
           </div>
         </div>
         </div>
@@ -58,7 +58,7 @@
             <img class="tile-image big-illustration" alt="" src="css/images/gesture.png">
             <h3 class="tile-title">手势感知</h3>
             <p>利用动作感应，手势感知技术实现人机互动</p>
-            <a class="btn btn-primary btn-large btn-block gesture_popup" href="http://42.123.86.187:3000?pw=600&amp;ph=400">预览</a>
+            <a class="btn btn-primary btn-large btn-block gesture_popup" href="http://42.123.86.187/leap/index.html?pw=600&amp;ph=400">预览</a>
           </div>
         </div>
         <div class="span3">
@@ -101,9 +101,9 @@
         <div class="span3">
           <div class="tile tile-hot">
             <img class="tile-image big-illustration" alt="" src="css/images/energy.png">
-            <h3 class="tile-title">电器控制</h3>
-            <p>实现家电开关控制，空调温度风力的远程调节等</p>
-            <a class="btn btn-primary btn-large btn-block energy_popup" href="http://42.123.86.187:3030/sampletv">预览</a>
+            <h3 class="tile-title">电源控制</h3>
+            <p>实现家电开关、远程与实时控制</p>
+            <a class="btn btn-primary btn-large btn-block energy_popup" href="http://42.123.86.187/switch/index.html?pw=600&amp;ph=400">预览</a>
           </div>
         </div>
 
@@ -134,6 +134,21 @@
           </div>
         </div>
  </div>
+
+<div class="row demo-tiles">
+        <div class="span3">
+          <div class="tile tile-hot">
+            <img class="tile-image big-illustration" alt="" src="css/images/nest.png">
+            <h3 class="tile-title">空调控制</h3>
+            <p>实现空调温度风力，开关的远程调节等</p>
+            <a class="btn btn-primary btn-large btn-block nest_popup" href="http://42.123.86.187/nest/index.html?pw=800&amp;ph=600">预览</a>
+          </div>
+        </div>
+ </div>
+
+
+
+
 
 <div id="stream" >
 <div id="header-wrapper">
@@ -188,17 +203,7 @@
 
 $('.gesture_popup').popup();
 $('.pm_popup').popup();
-$('.energy_popup').popup({
-				types		: {
-					energy			: function(content, callback){
-						content = '<iframe width="1200" height="600" src="'+content+'" frameborder="0" allowfullscreen></iframe>';
-						// Don't forget to call the callback!
-						callback.call(this, content);
-					}
-				},
-				width				: 1200,
-				height				: 600
-			});
+$('.energy_popup').popup();
 
 
 $('.brain_popup').popup();
@@ -207,6 +212,8 @@ $('.water_popup').popup();
 $('.motion_popup').popup();
 $('.plant_popup').popup();
 $('.door_popup').popup();
+$('.dash_popup').popup();
+$('.nest_popup').popup();
 
 
 </script>
